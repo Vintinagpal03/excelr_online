@@ -1,0 +1,130 @@
+what are different headings in html
+
+<h1>-------<h6>
+
+
+ ----------  ------- -----------------------------------
+ what is CSS
+ css-cascading style sheets
+       -USED TO STYLE/DESIGN webpages
+       -to apply css to element we need to use style attributes
+       syntax :
+       < style ="property: value;property2:value2"> content</style>
+
+
+1.inline css
+     syntax:
+     <style="property:value ; property2:value2"></style>
+     -used to style specific elements only
+
+
+2.internal css-cascading
+   syntax:
+   <style>
+    selector{
+        property:value;
+        property2:value2
+    }
+    -used to style multiple elements
+   </style> 
+   
+   3.external css-cascading
+     1.create a css file eith .css extension
+     2.link the css file to the html file
+     3.used to style multiple pages(large scale projects)
+
+   syntax:
+      <html>
+      <head>
+
+        <link rel="stylesheet" href="filename.css">
+   
+
+   inline css>internal css>external css
+
+based on display we have two types of elements
+
+1.block level elements
+2.inline elements
+
+1.block level---the element will occupy entire width of the page
+                 eg:p,h1,h2,h3,h4,h5,h6
+
+2.inline----the element will occupy its respective space in the page
+             eg:i,small
+
+
+to change dispaly property of an attribute we use display attribute
+<p style="display:inline"></p>   ---inline level  
+
+----------------------------------------------------
+margin:
+-the space around the border
+-margin attribute
+syntax:
+h1{
+    margin:20px(all sides top bottom left right)
+    margin:20px(top/bottom) 15px(left/right)
+    margin:20px(top)  30px(right) 40px(bottom)  50px(left)
+    margin-top:
+    margin-bottom:
+    margin left:
+    margin right:
+
+}
+ shorthand :
+      margin : top right bottom left
+      ----------------------------------------
+
+padding:
+-space around the content
+-padding attribute   
+h1{
+   padding:20px(all sides top bottom left right)
+   padding:20px(top/bottom) 15px(left/right)
+    padding:20px(top)  30px(right) 40px(bottom)  50px(left)
+    padding-top:
+    padding-bottom:
+    padding left:
+    padding right:
+
+}
+ shorthand :
+      padding : top right bottom left
+      ----------------------------------------
+border:
+--border attribute
+
+syntax:
+h1{
+   
+   border-style:
+   border-color:
+   border size
+   border:size style color(all sides)
+   border top
+   border bottom
+   border left
+   border right
+   border radius for rounded corners
+
+}
+style:
+1.solid
+2.dotted
+3.double
+4.dashed
+5.ridge
+6.groove
+insert
+outset
+
+----------------------------------------------------
+box model in css-cascading
+-it describes how elements are structured and spaced in web page
+
+
+structure;
+    content(text/image/video/audio)--->padding(space around the content)-->border(outline around the content)--->margin(space outside the border,it helps to seperate elements)
+
+
