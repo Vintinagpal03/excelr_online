@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        #p1{
+            background-color:aliceblue;
+        }
+        /*used to select first word of an element*/
+        #p1::first-letter{
+            color:red;
+            font-size:40px;
+        }
+        /*used to select first line of an element*/
+        #p1::first-line{
+            color:rgb(0,85, 200);
+
+        }
+       /* used to provide content before element */
+        #p2::before{
+            content:"😂😂";
+        }
+        /* used to select text */
+        #p1::selection{
+            background-color:brown;
+        }
+        /* used for list */
+        ::marker{
+            color:blueviolet;
+            font-size:20px;
+        }
+    </style>
+
+</head>
+<body>
+    <h3>Pseudo Element</h3>
+    <hr>
+    <p>it is used to add style to specific part f an element</p>
+    <p>it indicates with ::(double colon)</p>
+<hr>
+     <P id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga praesentium quos ea quia voluptatem ullam maxime nisi asperiores saepe delectus consequuntur cupiditate obcaecati ducimus nemo, nam ab quod, error a. Quis officia nulla accusantium possimus, dignissimos provident, molestias, id minima inventore natus quasi? Soluta totam delectus omnis, consequatur nihil est exercitationem voluptatum reprehenderit aperiam aspernatur eveniet libero, fugiat cum et repudiandae, ex sapiente possimus? Sunt reprehenderit molestiae veniam reiciendis quaerat itaque? Harum voluptate minima assumenda aliquam itaque numquam molestiae, illum omnis reiciendis placeat, tempora maiores pariatur quo explicabo ad quae reprehenderit totam. Ea nam quidem laudantium harum nesciunt nulla voluptates.</P>
+     <p id="p2">this is a content</p>
+     <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+     </ol>
+    
+</body>
+</html>
